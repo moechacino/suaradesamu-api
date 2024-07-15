@@ -1,0 +1,150 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique @db.VarChar(50)
+  password  String   @db.VarChar(100)
+  token     String?  @db.VarChar(300)
+  createdAt DateTime @default(now()) @db.Timestamp(0)
+
+  @@map("admin")
+}
+
+model Voter {
+  id              Int      @id @default(autoincrement())
+  nfcSerialNumber String @unique   @db.VarChar(50)
+  name            String   @db.VarChar(100)
+  phone           String? @db.VarChar(20)
+  NIK             String @unique   @db.VarChar(20)
+  createdAt       DateTime @default(now()) @db.Timestamp(0)
+  pin             Pin?
+
+  @@map("voter")
+}
+
+model Account {
+  id      Int    @id @default(autoincrement())
+  address String @db.VarChar(300)
+  
+
+  @@map("account")
+}
+
+model Pin {
+  id      Int    @id @default(autoincrement())
+  pinCode String @db.VarChar(6) @unique
+
+  voterId Int   @unique
+  voter   Voter @relation(fields: [voterId], references: [id])
+
+  @@map("pin")
+}
+
+
+model Candidate {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(100)
+  age  Int    @db.SmallInt
+  noUrut  Int @unique
+  visi  String @db.Text
+  photoProfileUrl String           @db.VarChar(255)
+  photoProfileAlt String           @db.VarChar(100)
+  workPlan        WorkPlan[]
+  education       Education[]
+  workExperience  WorkExperience[]
+  organization  OrganizationExperience[]
+  misi Misi[]
+  credibility String? @db.VarChar(100)
+  credibilityDetails Credibility?
+  createdAt       DateTime         @default(now()) @db.Timestamp(0)
+  updatedAt       DateTime         @updatedAt @db.Timestamp(0)
+  @@map("candidate")
+}
+
+model Credibility{
+  id Int @id @default(autoincrement())
+  positive String
+  negative String
+  date_from DateTime
+  date_to DateTime
+  candidateId Int @unique
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+@@map("Credibility")
+}
+
+model Misi {
+  id Int @id @default(autoincrement())
+  misi String @db.Text
+  candidateId Int
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now()) @db.Timestamp(0)
+  @@map("misi")
+}
+
+model WorkPlan {
+  id          Int       @id @default(autoincrement())
+  title       String    @db.VarChar(50)
+  detail      String    @db.Text
+  candidateId Int
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now()) @db.Timestamp(0)
+  updatedAt   DateTime  @updatedAt @db.Timestamp(0)
+
+  @@map("workPlan")
+}
+
+model Education {
+  id          Int       @id @default(autoincrement())
+  degree      String    @db.VarChar(50)
+  institution String    @db.VarChar(100)
+  periodStart DateTime
+  periodEnd   DateTime?
+
+  candidateId Int
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now()) @db.Timestamp(0)
+  updatedAt   DateTime  @updatedAt @db.Timestamp(0)
+
+  @@map("education")
+}
+
+model WorkExperience {
+  id          Int       @id @default(autoincrement())
+  title    String @db.VarChar(100)
+  periodStart DateTime
+  periodEnd   DateTime?
+
+  candidateId Int
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now()) @db.Timestamp(0)
+  updatedAt   DateTime  @updatedAt @db.Timestamp(0)
+
+  @@map("workExperience")
+}
+
+model OrganizationExperience{
+  id          Int       @id @default(autoincrement())
+  title    String @db.VarChar(100)
+  periodStart DateTime
+  periodEnd   DateTime?
+
+  candidateId Int
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now()) @db.Timestamp(0)
+  updatedAt   DateTime  @updatedAt @db.Timestamp(0)
+
+  @@map("organizationExperience")
+}

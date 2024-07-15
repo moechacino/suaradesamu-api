@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Bambang ",
+    "age": 60,
+    "noUrut": 4,
+    "visi": "Terbangunnya tata kelola Pemerintahan Desa yang baik dan bersih guna mewujutkan Desa Kebonadem menuju Adil, Makmur, Sejahtera dan Bermartabat",
+    "photoProfileUrl": "https://dory-liberal-uniformly.ngrok-free.app/profile/PP_Bambang.jpeg",
+    "photoProfileAlt": "PP_Bambang.jpeg",
+    "workPlan": [
+      {
+        "title": "Social Welfare Programs",
+        "detail": "Details about the plan to improve social welfare programs."
+      },
+      {
+        "title": "Public Safety Enhancements",
+        "detail": "Details about the plan to enhance public safety."
+      },
+      {
+        "title": "Digital Transformation",
+        "detail": "Details about the plan to drive digital transformation."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Social Work",
+        "institution": "University F",
+        "periodStart": "1990-01-01T00:00:00.000Z",
+        "periodEnd": "1994-01-01T00:00:00.000Z"
+      },
+      {
+        "degree": "Master of Public Administration",
+        "institution": "University G",
+        "periodStart": "1995-01-01T00:00:00.000Z",
+        "periodEnd": "1997-01-01T00:00:00.000Z"
+      }
+    ],
+    "workExperience": [
+      {
+        "title": "Social Worker",
+        "periodStart": "1998-01-01T00:00:00.000Z",
+        "periodEnd": "2005-01-01T00:00:00.000Z"
+      },
+      {
+        "title": "Program Director",
+        "periodStart": "2005-01-01T00:00:00.000Z",
+        "periodEnd": "2015-01-01T00:00:00.000Z"
+      },
+      {
+        "title": "Executive Director",
+        "periodStart": "2016-01-01T00:00:00.000Z",
+        "periodEnd": "2021-01-01T00:00:00.000Z"
+      }
+    ],
+    "organization": [
+      {
+        "title": "Member of JKL Organization",
+        "periodStart": "2010-01-01T00:00:00.000Z",
+        "periodEnd": "2014-01-01T00:00:00.000Z"
+      },
+      {
+        "title": "President of MNO Organization",
+        "periodStart": "2015-01-01T00:00:00.000Z",
+        "periodEnd": "2020-01-01T00:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "name": "Sukardi ",
+    "age": 70,
+    "noUrut": 5,
+    "visi": "Terbangunnya tata kelola Pemerintahan Desa yang baik dan bersih guna mewujutkan Desa Kebonadem menuju Adil, Makmur, Sejahtera dan Bermartabat",
+    "photoProfileUrl": "https://dory-liberal-uniformly.ngrok-free.app/profile/PP_Sukardi.jpeg",
+    "photoProfileAlt": "PP_Sukardi.jpeg",
+    "workPlan": [
+      {
+        "title": "Social Welfare Programs",
+        "detail": "Details about the plan to improve social welfare programs."
+      },
+      {
+        "title": "Public Safety Enhancements",
+        "detail": "Details about the plan to enhance public safety."
+      },
+      {
+        "title": "Digital Transformation",
+        "detail": "Details about the plan to drive digital transformation."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Social Work",
+        "institution": "University F",
+        "periodStart": "1990-01-01T00:00:00.000Z",
+        "periodEnd": "1994-01-01T00:00:00.000Z"
+      },
+      {
+        "degree": "Master of Public Administration",
+        "institution": "University G",
+        "periodStart": "1995-01-01T00:00:00.000Z",
+        "periodEnd": "1997-01-01T00:00:00.000Z"
+      }
+    ],
+    "workExperience": [
+      {
+        "title": "Social Worker",
+        "periodStart": "1998-01-01T00:00:00.000Z",
+        "periodEnd": "2005-01-01T00:00:00.000Z"
+      },
+      {
+        "title": "Program Director",
+        "periodStart": "2005-01-01T00:00:00.000Z",
+        "periodEnd": "2015-01-01T00:00:00.000Z"
+      },
+      {
+        "title": "Executive Director",
+        "periodStart": "2016-01-01T00:00:00.000Z",
+        "periodEnd": "2021-01-01T00:00:00.000Z"
+      }
+    ],
+    "organization": [
+      {
+        "title": "Member of JKL Organization",
+        "periodStart": "2010-01-01T00:00:00.000Z",
+        "periodEnd": "2014-01-01T00:00:00.000Z"
+      },
+      {
+        "title": "President of MNO Organization",
+        "periodStart": "2015-01-01T00:00:00.000Z",
+        "periodEnd": "2020-01-01T00:00:00.000Z"
+      }
+    ]
+  }
+]
