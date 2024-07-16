@@ -35,14 +35,6 @@ model Voter {
   @@map("voter")
 }
 
-model Account {
-  id      Int    @id @default(autoincrement())
-  address String @db.VarChar(300)
-  
-
-  @@map("account")
-}
-
 model Pin {
   id      Int    @id @default(autoincrement())
   pinCode String @db.VarChar(6) @unique
