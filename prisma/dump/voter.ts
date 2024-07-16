@@ -37,7 +37,7 @@ const pinVoter = ["183562", "093516", "546217", "452617", "562846", "956371"];
 // }
 export const dumpVoter: Voter[] = [
   {
-    nfsSerialNumber: "043E0C22DF5D80",
+    nfsSerialNumber: "03FD67H8F1JD2",
     name: "Priyono NFC",
     NIK: "350204087862271",
     PIN: "111111",
@@ -49,43 +49,43 @@ export const dumpVoter: Voter[] = [
     PIN: "222222",
   },
   {
-    nfsSerialNumber: "047641C2E55B80",
+    nfsSerialNumber: "04764FA355B80",
     name: "Alvian NFC",
     NIK: "350204087862273",
     PIN: "333333",
   },
   {
-    nfsSerialNumber: "02B0A141501BB0",
+    nfsSerialNumber: "02B0AFA32501BB0",
     name: "Kenalan Nayla",
     NIK: "350204087862274",
     PIN: "444444",
   },
   {
-    nfsSerialNumber: "0473628AD15D80",
+    nfsSerialNumber: "047362FDSAF215D80",
     name: "Keluarga Nayla 1",
     NIK: "350204087862275",
     PIN: "555555",
   },
   {
-    nfsSerialNumber: "05810E4002B200",
+    nfsSerialNumber: "05810E40FADS1300",
     name: "Keluarga Nayla 2",
     NIK: "350204087862276",
     PIN: "666666",
   },
   {
-    nfsSerialNumber: "0440483A8C6680",
+    nfsSerialNumber: "0FDSAHF27348",
     name: "Salsa",
     NIK: "3502040878622762",
     PIN: "777777",
   },
   {
-    nfsSerialNumber: "044749A2912980",
+    nfsSerialNumber: "FKJASF982",
     name: "GM",
     NIK: "3502040878622761",
     PIN: "888888",
   },
   {
-    nfsSerialNumber: "04103772686A80",
+    nfsSerialNumber: "FASDKJ289432",
     name: "Ryandira",
     NIK: "3502040878622760",
     PIN: "999999",
